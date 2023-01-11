@@ -1,3 +1,4 @@
+//Creating List
 List<int> primeNumbers = new List<int>();
 primeNumbers.Add(1); // adding elements using add() method
 primeNumbers.Add(3);

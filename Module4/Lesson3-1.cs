@@ -9,23 +9,30 @@ class KeyValuePair<TKey, TValue>
     public TValue Value { get; set; }
 }
 
-// Instantiating Generic Class
+public class Program
+{
+    public static void Main()
+    {
+        // Instantiating Generic Class
 
-DataStore<string> store = new DataStore<string>();
-store.Data = "Hello World!";
-//store.Data = 123; //compile-time error
+        DataStore<string> store = new DataStore<string>();
+        store.Data = "Hello World!";
+        //store.Data = 123; //compile-time error
 
-DataStore<int> intStore = new DataStore<int>();
-intStore.Data = 100;
-//intStore.Data = "Hello World!"; // compile-time error
+        DataStore<int> intStore = new DataStore<int>();
+        intStore.Data = 100;
+        //intStore.Data = "Hello World!"; // compile-time error
 
-KeyValuePair<int, string> kvp1 = new KeyValuePair<int, string>();
-kvp1.Key = 100;
-kvp1.Value = "Hundred";
+        KeyValuePair<int, string> kvp1 = new KeyValuePair<int, string>();
+        kvp1.Key = 100;
+        kvp1.Value = "Hundred";
 
-KeyValuePair<string, string> kvp2 = new KeyValuePair<string, string>();
-kvp2.Key = "IT";
-kvp2.Value = "Information Technology";
+        KeyValuePair<string, string> kvp2 = new KeyValuePair<string, string>();
+        kvp2.Key = "IT";
+        kvp2.Value = "Information Technology";
+    }
+}
+
 
 /*
 Notes:
