@@ -1,0 +1,7 @@
+Main points:
+---------------------------------------
+Multi-layer applications
+Persistant storage
+Non persistant storage
+Database
+Entity Framework
